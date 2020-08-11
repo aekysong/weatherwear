@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PersonalProject</string>
+    <string name="wear_prompt">Choose your clothes</string>
+
+    <string-array name="wear_arrays">
+        <item>None</item>
+        <item>Padded Coat</item>
+        <item>Jacket</item>
+        <item>Coat</item>
+        <item>Leather Jacket</item>
+        <item>Cardigan</item>
+        <item>Shirt</item>
+        <item>Sweat Shirt</item>
+        <item>Short-sleeved T-shirt</item>
+        <item>Sleeveless T-shirt</item>
+        <item>Blouse</item>
+        <item>Vest</item>
+        <item>Sweater</item>
+        <item>Jeans</item>
+        <item>Trouser</item>
+        <item>Shorts</item>
+        <item>Skirt</item>
+        <item>One-piece Dress</item>
+    </string-array>
+</resources>

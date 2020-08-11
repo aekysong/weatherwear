@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background_img"
+    tools:context=".MainPageActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/greeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="45sp"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/pacifico"
+                android:textColor="@color/colorWhite"
+                android:text="Hello!" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:fontFamily="@font/gillsans"
+                android:textColor="@color/colorWhite"
+                android:text="Today's weather is" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/weather_image"
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_launcher_foreground" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/weather_condition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/gillsans"
+                        android:text="TextView"
+                        android:textColor="@color/colorSkyblue"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/weather_text"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="TextView"
+                        android:lineSpacingMultiplier="1.2"
+                        android:textColor="@color/colorWhite"
+                        android:fontFamily="@font/gillsans"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/gillsans"
+                android:layout_marginLeft="30dp"
+                android:textSize="25sp"
+                android:textColor="@color/colorWhite"
+                android:text="Today's wear is" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/wear_image1"
+                        android:layout_width="50dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_launcher_foreground"
+                        android:scaleType="centerInside"/>
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/wear_image1_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/gillsans"
+                            android:lineSpacingMultiplier="1.2"
+                            android:text="TextView"
+                            android:textColor="@color/colorSkyblue"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/wear_image1_text2"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/gillsans"
+                            android:textSize="15sp"
+                            android:lineSpacingMultiplier="1.2"
+                            android:textColor="@color/colorWhite"
+                            android:text="TextView" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/wear_image2"
+                        android:layout_width="50dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_launcher_foreground"
+                        android:scaleType="centerInside"/>
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/wear_image2_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/gillsans"
+                            android:lineSpacingMultiplier="1.2"
+                            android:text="TextView"
+                            android:textColor="@color/colorSkyblue"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/wear_image2_text2"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/gillsans"
+                            android:textSize="15sp"
+                            android:lineSpacingMultiplier="1.2"
+                            android:textColor="@color/colorWhite"
+                            android:text="TextView" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/wear_image3"
+                        android:layout_width="50dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_launcher_foreground"
+                        android:scaleType="centerInside"/>
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/wear_image3_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/gillsans"
+                            android:lineSpacingMultiplier="1.2"
+                            android:text="TextView"
+                            android:textColor="@color/colorSkyblue"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/wear_image3_text2"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/gillsans"
+                            android:textSize="15sp"
+                            android:lineSpacingMultiplier="1.2"
+                            android:textColor="@color/colorWhite"
+                            android:text="TextView" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/new_record"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/landing_background"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/ic_add_black_24dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_background_img"
+    tools:context=".NewRecordActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pacifico"
+            android:textSize="24sp"
+            android:layout_marginTop="125dp"
+            android:textColor="@color/colorWhite"
+            android:text="What are you wearing today?" />
+
+        <Spinner
+            android:id="@+id/record_spinner1"
+            android:layout_marginTop="30dp"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:spinnerMode="dropdown"
+            android:entries="@array/wear_arrays"
+            android:prompt="@string/wear_prompt"
+            android:background="@color/colorWhite"/>
+
+        <Spinner
+            android:id="@+id/record_spinner2"
+            android:layout_marginTop="15dp"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:spinnerMode="dropdown"
+            android:entries="@array/wear_arrays"
+            android:prompt="@string/wear_prompt"
+            android:background="@color/colorWhite"/>
+
+        <Spinner
+            android:id="@+id/record_spinner3"
+            android:layout_marginTop="15dp"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:spinnerMode="dropdown"
+            android:entries="@array/wear_arrays"
+            android:prompt="@string/wear_prompt"
+            android:background="@color/colorWhite" />
+
+        <Spinner
+            android:id="@+id/record_spinner4"
+            android:layout_marginTop="15dp"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:spinnerMode="dropdown"
+            android:entries="@array/wear_arrays"
+            android:prompt="@string/wear_prompt"
+            android:background="@color/colorWhite" />
+
+        <Spinner
+            android:id="@+id/record_spinner5"
+            android:layout_marginTop="15dp"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:spinnerMode="dropdown"
+            android:entries="@array/wear_arrays"
+            android:prompt="@string/wear_prompt"
+            android:background="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/record_button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gillsans"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorBlue"
+            android:layout_marginTop="30dp"
+            android:text="RECORD" />
+    </LinearLayout>
+
+</LinearLayout>
